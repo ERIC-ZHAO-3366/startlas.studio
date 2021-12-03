@@ -1,10 +1,5 @@
-# 开发指南
+# STARTLAS.STUDIO
 
-本扩展支持三种类型的脚本,分别为:
+AERICAPS|首航苍穹：http://www.aericaps.org/
 
-* 前台脚本
-* [后台脚本](/dev/background.html)
-* [定时脚本](/dev/background.html#定时脚本)
-
-前台脚本为通常意义上的油猴脚本,后台脚本与定时脚本为本脚本猫扩展所特有支持的脚本,详情请看相对应的文档.
-
+STAR ALTAS REAL|星图真的官网：http://www.startlas.com
