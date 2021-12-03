@@ -27,7 +27,26 @@
     <!-- 图标动画css调用 -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160617802-2"></script>
-    <script type="text/javascript" async="" src="./console.js"></script>
+    <script language="JavaScript">
+	function show_date_time(){
+	window.setTimeout("show_date_time()", 1000);
+	BirthDay=new Date("03/02/2020 00:00:00");//这个日期是可以修改的
+	today=new Date();
+	timeold=(today.getTime()-BirthDay.getTime());
+	sectimeold=timeold/1000
+	secondsold=Math.floor(sectimeold);
+	msPerDay=24*60*60*1000
+	e_daysold=timeold/msPerDay
+	daysold=Math.floor(e_daysold);
+	e_hrsold=(e_daysold-daysold)*24;
+	hrsold=Math.floor(e_hrsold);
+	e_minsold=(e_hrsold-hrsold)*60;
+	minsold=Math.floor((e_hrsold-hrsold)*60);
+	seconds=Math.floor((e_minsold-minsold)*60);
+	span_dt_dt.innerHTML="狗哥把敦煌咕了："+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+	}
+	show_date_time();
+	</script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -147,16 +166,8 @@
                 <p> 我们未曾拥有过群星，我们只是星图的谱写者</p>
                 <!-- 结尾运行时间 -->
                 <body>
-                    <p class="c">© 2017-2021 STAR ALTAS| 狗哥咕了敦煌
-                        <b class="c"><strong>
-			<script language="JavaScript" type="text/javascript">
-			var urodz = new Date("03/02/2020");
-			var now = new Date();
-			var ile = now.getTime() - urodz.getTime();
-			var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-			document.write(+dni)
-			</script>
-		    </strong></b>Day</p>
+                    <p class="c">© 2017-2021 STAR ALTAS| 
+                     <span id="span_dt_dt" "></span> 
                 </body>
                 <!-- 结尾运行时间 END -->
             </div>
